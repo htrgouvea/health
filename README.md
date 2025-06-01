@@ -8,7 +8,6 @@ This project provides a modular, extensible Python-based CLI to process health d
 - Predict future weight trends using **polynomial regression**
 - Save forecasts as both **CSV and visual plots**
 
-
 ### Download
 
 ```
@@ -22,9 +21,11 @@ pip3 install -r requirements.txt
 Step 1: Export Apple Health data
 
 Export your health data from your iPhone:
-    1. Apple Health → Profile → Export All Data
-    2. Unzip the exported file and place the export.xml file in the root of the project directory.
 
+    1. Apple Health → Profile → Export All Data
+
+    2. Unzip the exported file and place the export.xml file in the root of the project directory.
+    
 Step 2: Extract weight data from export.xml
 
 ```
@@ -47,9 +48,9 @@ You can change --value to any number of future days you want to predict (default
 
 This command will:
 
-Train a polynomial regression model using your full weight history
-Predict weight trends for the next N days
-Save results to:
+1. Train a polynomial regression model using your full weight history;
+2. Predict weight trends for the next N days;
+3. Save results to:
 
 output/weight_forecast.csv     # Tabular data: date, predicted_weight, min, max
 plots/weight_forecast.png      # Graph with historical trend and prediction curve
