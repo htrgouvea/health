@@ -52,5 +52,7 @@ This command will:
 2. Predict weight trends for the next N days;
 3. Save results to:
 
+```
 output/weight_forecast.csv     # Tabular data: date, predicted_weight, min, max
 plots/weight_forecast.png      # Graph with historical trend and prediction curve
+```
